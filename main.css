@@ -1,0 +1,326 @@
+@keyframes drawArc1 {
+    0% { transform: rotate(-30deg); }
+    50%{ transform: rotate(-150deg); }
+    100%{ transform: rotate(-30deg);  }
+}
+
+@keyframes drawArc2 {
+    0% { transform: rotate(30deg); }
+    50%{ transform: rotate(150deg); }
+    100%{ transform: rotate(30deg); }
+}
+
+@keyframes city {
+
+    0% {
+        background-position: 100% -1000px, 0 0;
+        background-position-x: 100%, 0px;
+        background-position-y: -1000px, 0px;
+    }
+
+    100% {
+        background-position: 100% 0, 0 0;
+        background-position-x: 100%, 0px;
+        background-position-y: 0px, 0px;
+    }
+
+}
+
+.wrapperDed {
+    width: 300px;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+}
+
+.snow {
+    width: 300px;
+    height:300px;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    background-image: url(img/snow-01.svg);
+    animation: city 10s linear infinite;
+}
+
+.dedClass {
+    width: 200px;
+    display: inline-block;
+    content: url('img/ded_odin-01.svg');
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper {
+    position: relative;
+    margin: auto;
+    width:960px;
+}
+
+
+@media (min-width: 768px) {
+
+    .wrapper {
+        position: relative;
+        margin: auto;
+        width:640px;
+    }
+
+    .modalContent {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/buh770.png');
+    }
+
+    .getRequest {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/getrequest770.png');
+    }
+
+    .title {
+        position: absolute;
+        top: 9%;
+        left: 9%;
+        color: white;
+        font-size: 42px;
+        width: 172px;
+    }
+
+    .content {
+        position: absolute;
+        color: white;
+        top: 39%;
+        left: 9%;
+        width: 230px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .cross {
+        font-size: 42px;
+        position: absolute;
+        top: -2%;
+        left: 96%;
+        color: white;
+        width: 32px;
+        font-family: sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .inputClass {
+        position: absolute;
+        top: 70%;
+        left: 26%;
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f3f3;
+    }
+
+    .buttonClass {
+        position: absolute;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 76px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 9px 2px;
+        cursor: pointer;
+        top: 80%;
+        left: 26%;
+    }
+
+    .promo {
+        position: absolute;
+        top: 58%;
+        left: 9%;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .wrapper {
+        position: relative;
+        margin: auto;
+        width:960px;
+    }
+
+    .modalContent {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/buh1024.png');
+    }
+
+    .getRequest {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/getrequest1024.png');
+    }
+
+    .title {
+        position: absolute;
+        top: 9%;
+        left: 9%;
+        color: white;
+        font-size: 42px;
+        width: 172px;
+    }
+
+    .content {
+        position: absolute;
+        color: white;
+        top: 45%;
+        left: 9%;
+        width: 230px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .cross {
+        font-size: 42px;
+        position: absolute;
+        top: -2%;
+        left: 97%;
+        color: white;
+        width: 32px;
+        font-family: sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .inputClass {
+        position: absolute;
+        top: 80%;
+        left: 9%;
+        padding: 10px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #f3f3f3;
+    }
+
+    .buttonClass {
+        position: absolute;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 76px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 9px 2px;
+        cursor: pointer;
+        top: 77%;
+        left: 59%;
+    }
+
+    .promo {
+        position: absolute;
+        top: 58%;
+        left: 9%;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .wrapper {
+        position: relative;
+        margin: auto;
+        width:960px;
+    }
+
+    .modalContent {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/buh1024.png');
+    }
+
+
+
+    .getRequest {
+        background-color: #fefefe;
+        margin: auto;
+        content: url('popUpded/getrequest1024.png');
+    }
+
+    .title {
+        position: absolute;
+        top: 9%;
+        left: 9%;
+        color: white;
+        font-size: 42px;
+        width: 172px;
+    }
+
+    .content {
+        position: absolute;
+        color: white;
+        top: 45%;
+        left: 9%;
+        width: 230px;
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    .cross {
+        font-size: 42px;
+        position: absolute;
+        top: -2%;
+        left: 97%;
+        color: white;
+        width: 32px;
+        font-family: sans-serif;
+        font-weight: 100;
+        cursor: pointer;
+    }
+
+    .inputClass {
+        position: absolute;
+        top: 80%;
+        left: 9%;
+        padding: 10px;
+    }
+
+    .buttonClass {
+        position: absolute;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 76px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 9px 2px;
+        cursor: pointer;
+        top: 77%;
+        left: 59%;
+    }
+
+    .promo {
+        position: absolute;
+        top: 58%;
+        left: 9%;
+        color: white;
+        font-weight: 600;
+    }
+}
