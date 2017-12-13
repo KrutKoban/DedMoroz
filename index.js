@@ -145,12 +145,12 @@ function createDed(url) {
           promo.className = 'promo';
           promo.innerText = '#' + randomTextObj.promo;
           document.getElementsByClassName('wrapper')[0].appendChild(promo);
-          /*setTimeout(function () {
+          setTimeout(function () {
             document.getElementsByClassName('modal')[0].style.display = 'none';
             document.getElementsByClassName('wrapperDed')[0].style.display = 'none';
             document.getElementsByClassName('snow')[0].style.display = 'none';
             document.body.style.overflow = 'auto';
-          }, 20000);*/
+          }, 20000);
         }
       }
     }
