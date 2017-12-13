@@ -118,7 +118,7 @@ function createDed(url) {
         popUpContent.className = 'modalContent';
         document.getElementsByClassName('wrapper')[0].appendChild(popUpContent);
       } else {
-        document.getElementsByClassName('wrapper')[0].style.visibility = 'visible';
+        document.getElementsByClassName('modal')[0].style.visibility = 'visible';
       }
     }
 
