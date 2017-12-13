@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <style>
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script src="index.js"></script>
+<script src="sourcebuster.min.js">
+
+</script>
+<script type="text/javascript">
+  window.onload = function () {
+    if(createDed) {
+      createDed('https://modulbank.ru/landing/callphone');
+    }
+  }
+  function logSource(sbData) {
+    console.log('Cookies are set! Your source is:' + sbData.current.src);
+  }
+  sbjs.init({ callback: logSource });
+</script>
+</html>
